@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo app</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="container">
+        <header class="header"><h1>To Do APP</h1></header>
+    
+<!-- index.html -->
+        <div id="app" class="content">
+            <form class="form" id="taskForm">
+                <input class="input" type="text" id="taskInput" placeholder="Add a new task" required>
+                <button class="button" type="submit">Add Task</button>
+            </form>
+            <div class="actions">
+                <button class="action-button" id="clearAll">Clear All Tasks</button>
+                <button class="action-button" id="clearCompleted">Clear Completed Tasks</button>
+                <button class="action-button" id="sortTasks">Sort Tasks</button>
+            </div>
+            <div class="task-stats">
+                <p>Total Tasks: <span id="totalTasks">0</span></p>
+                <p>Completed Tasks: <span id="completedTasks">0</span></p>
+            </div>
+            <ul id="taskList" class="task-list">
+                <!-- Todo list content will go here -->
+            </ul>
+        </div>
+
+    <script src="app.js"> </script>
+</body>
+</html>
